@@ -1,0 +1,21 @@
+import pandas as pd
+
+df = pd.read_csv("messey.csv")
+print("shape: \n")
+print(df.shape)
+print("\n")
+print("data_types: \n")
+print(df.dtypes)
+print("\n")
+print("columns: \n")
+print(df.columns)
+print("\n")
+print("info: \n")
+print(df.info())
+print("\n")
+print("the column with null values: \n")
+print(df.isnull().sum())
+print("\n")
+print("total null values: \n")
+print(df.isnull().sum().sum())
+
